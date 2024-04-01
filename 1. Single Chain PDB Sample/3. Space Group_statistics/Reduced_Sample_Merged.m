@@ -1,5 +1,5 @@
 %%%% Load Space Group List
-Data=readtable('Accessible_SCH_SampleInfo.xlsx');
+Data=readtable('SCH_SampleInfo.xlsx');
 SpaceGroup_List=unique(Data.SG);
 SpaceGroup_List(23)={'I 41_a'};
 SpaceGroup_List(24)=[];
