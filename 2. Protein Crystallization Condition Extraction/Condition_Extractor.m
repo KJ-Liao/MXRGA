@@ -1,5 +1,5 @@
 % Loading PDB ID of Accessible_SCH_Sample
-Filename='Accessible_SCH_Sample.txt';
+Filename='Accessible_SingleChain_Human_Sample.txt';
 Sample_Info=table2struct(readtable(Filename));
 
 % Load Condition Dictionary
@@ -752,7 +752,7 @@ for si=1:size(Sample_Info,1)
 end
 
 % sum(sum(Condition_MetaTable(1:5,:))==0)
-% Condition_MetaTable=real(Condition_MetaTable);
-% csvwrite('Condition_Table.csv',Condition_MetaTable)
-% writetable(struct2table(Missing_Info), 'Missing_Info.xlsx')
-% writetable(struct2table(Other_Reagent), 'Other_Reagent.xlsx')
+Condition_MetaTable=real(Condition_MetaTable);
+csvwrite('Condition_Table.csv',Condition_MetaTable)
+writetable(struct2table(Missing_Info), 'Missing_Info.xlsx')
+writetable(struct2table(Other_Reagent), 'Other_Reagent.xlsx')
