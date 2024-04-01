@@ -1,6 +1,7 @@
-%%%% Load ID of Available Single Chain PDB Sample (Before 05/27/2022)
-File=fopen('Accessible_SingleChain_PDB_Sample_2022-05-27.txt');
+%%%% Load ID of Available Single Chain Human Sample (Before 05/27/2022)
+File=fopen('Accessible_SingleChain_Human_Sample.txt');
 m=1; SingleChain_Sample(1).ID=[];
+line=fgetl(File);
 while (1)
     line=fgetl(File);
     if line==-1, break, end 
@@ -15,7 +16,7 @@ SCH_Sample(1).Seq=[];
 Error_Sample(1).ID=[];
 i=1; j=1;
 for n=1:size(SingleChain_Sample,2)  
-    URL=strcat('https://www.rcsb.org/fasta/entry/',SingleChain_Sample(n).ID(1:4),'/display');
+    URL=['https://www.rcsb.org/fasta/entry/',lower(SingleChain_Sample(n).ID),'/display'];
     try 
         Info=webread(URL);
         Seq_No=strfind(Info,'>');
