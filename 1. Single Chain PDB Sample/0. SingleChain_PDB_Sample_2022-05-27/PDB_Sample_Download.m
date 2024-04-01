@@ -17,7 +17,7 @@ fclose(File);
 % Wrong or Changed(Renamed) PDB ID lead to 0 KB html logs
 % If So, Please Correct the PDB ID or Remove them from Input_Sample.txt
 for n=1:length(Sample)   
-    URL=strcat('https://files.rcsb.org/download/',lower(Sample(n).ID),'.pdb');
+    URL=['https://files.rcsb.org/download/',lower(Sample(n).ID),'.pdb'];
     websave(lower(Sample(n).ID),URL);
     Reamined_No=length(Sample)-n
 end
