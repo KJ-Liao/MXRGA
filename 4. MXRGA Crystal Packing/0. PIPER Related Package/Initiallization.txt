@@ -1,0 +1,2 @@
+sed -i "s/\r//" Sample_prep.sh
+sed -i "s/\r//" Sample_PIPER.sh
