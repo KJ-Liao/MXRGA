@@ -1,0 +1,27 @@
+#!/bin/bash
+
+../protein_prep/prepare.py 1iat.000.1.pdb
+../protein_prep/prepare.py 1iat.000.16.pdb
+../protein_prep/prepare.py 1iat.000.8.pdb
+../protein_prep/prepare.py 1iat.000.35.pdb
+../protein_prep/prepare.py 1iat.000.39.pdb
+../protein_prep/prepare.py 1iat.000.29.pdb
+../protein_prep/prepare.py 1iat.000.32.pdb
+../protein_prep/prepare.py 1iat.000.45.pdb
+../protein_prep/prepare.py 1iat.000.49.pdb
+../protein_prep/prepare.py 1iat.000.118.pdb
+../protein_prep/prepare.py 1iat.000.37.pdb
+../protein_prep/prepare.py 1iat.000.50.pdb
+../protein_prep/prepare.py 1iat.000.52.pdb
+../protein_prep/prepare.py 1iat.000.65.pdb
+../protein_prep/prepare.py 1iat.000.148.pdb
+../protein_prep/prepare.py 1iat.000.152.pdb
+../protein_prep/prepare.py 1iat.000.191.pdb
+../protein_prep/prepare.py 1iat.000.194.pdb
+../protein_prep/prepare.py 1iat.000.234.pdb
+../protein_prep/prepare.py 1iat.000.219.pdb
+../protein_prep/prepare.py 1iat.000.242.pdb
+../protein_prep/prepare.py 1iat.000.220.pdb
+../protein_prep/prepare.py 1iat.000.282.pdb
+../protein_prep/prepare.py 1iat.000.120.pdb
+../protein_prep/prepare.py 1iat.000.261.pdb
