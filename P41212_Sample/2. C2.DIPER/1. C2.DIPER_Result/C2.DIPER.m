@@ -5,7 +5,8 @@ parpool(8)
 %%%% Default Settings
 % Load PDB ID
 % (Input_P41212_Sample_190.txt; Input_P43212_Sample_183.txt)
-List=fopen('Input_P41212_Sample_190.txt');
+Filename='Example.txt';
+List=fopen(Filename);
 sp=1;Sample(1).ID=[];
 while (1)
     line=fgetl(List);
@@ -208,7 +209,7 @@ parfor r=1:size(Sample,2)
 
     %%%% C2.DIPER Top Rank Output Analysis
     % Load PIPER Docking Results
-    Result=fopen([lower(Sample(r).ID),'/ft.002.00']);
+    Result=fopen([lower(Sample(r).ID),'/ft.000.00']);
     PIPER_result=zeros(Limit, 10);
     for p=1:Limit
         line=fgetl(Result);
