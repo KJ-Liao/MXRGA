@@ -1,4 +1,4 @@
-%%%% Load Acceptable Pose (RMSD_95<6)
+%%%% Load Acceptable Pose
 load C2_TopRank_Result.mat;
 Set_Idx='.000.';
 
