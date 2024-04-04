@@ -1,6 +1,6 @@
-%%%% Load Acceptable Pose (RMSD_95<6)
+%%%% Load Acceptable Pose
 load C2_TopRank_Result.mat;
-Set_Idx='.002.';
+Set_Idx='.000.';
 
 mkdir('C4.DIPER_P41212');
 for r=1:size(C2_TopRank_Result,2)
