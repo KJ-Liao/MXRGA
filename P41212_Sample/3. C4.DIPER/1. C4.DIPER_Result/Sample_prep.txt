@@ -1,0 +1,27 @@
+#!/bin/bash
+
+../protein_prep/prepare.py 5cg5.000.3.pdb
+../protein_prep/prepare.py 5cg5.000.102.pdb
+../protein_prep/prepare.py 5cg5.000.130.pdb
+../protein_prep/prepare.py 5cg5.000.101.pdb
+../protein_prep/prepare.py 5cg5.000.146.pdb
+../protein_prep/prepare.py 5cg5.000.148.pdb
+../protein_prep/prepare.py 5cg5.000.177.pdb
+../protein_prep/prepare.py 5cg5.000.196.pdb
+../protein_prep/prepare.py 5cg5.000.156.pdb
+../protein_prep/prepare.py 5cg5.000.216.pdb
+../protein_prep/prepare.py 5cg5.000.178.pdb
+../protein_prep/prepare.py 5cg5.000.222.pdb
+../protein_prep/prepare.py 5cg5.000.257.pdb
+../protein_prep/prepare.py 5cg5.000.507.pdb
+../protein_prep/prepare.py 5cg5.000.274.pdb
+../protein_prep/prepare.py 5cg5.000.298.pdb
+../protein_prep/prepare.py 5cg5.000.278.pdb
+../protein_prep/prepare.py 5cg5.000.696.pdb
+../protein_prep/prepare.py 5cg5.000.265.pdb
+../protein_prep/prepare.py 5cg5.000.719.pdb
+../protein_prep/prepare.py 5cg5.000.444.pdb
+../protein_prep/prepare.py 5cg5.000.400.pdb
+../protein_prep/prepare.py 5cg5.000.485.pdb
+../protein_prep/prepare.py 5cg5.000.709.pdb
+../protein_prep/prepare.py 5cg5.000.972.pdb
