@@ -1,13 +1,13 @@
 %%%% Load Acceptable Pose (RMSD_95<6)
 load C2_TopRank_Result.mat;
-Set_Idx='.002.';
+Set_Idx='.000.';
 
-mkdir('C4.DIPER_P41212');
+mkdir('C4.DIPER_P43212');
 for r=1:size(C2_TopRank_Result,2)
     for s=1:size(C2_TopRank_Result(r).Output_Idx,1)
-        mkdir(['C4.DIPER_P41212/',lower(C2_TopRank_Result(r).ID),Set_Idx,num2str(C2_TopRank_Result(r).Output_Idx(s))]);
+        mkdir(['C4.DIPER_P43212/',lower(C2_TopRank_Result(r).ID),Set_Idx,num2str(C2_TopRank_Result(r).Output_Idx(s))]);
         File=['C2.Top25_Pose/',lower(C2_TopRank_Result(r).ID),'/',lower(C2_TopRank_Result(r).ID),Set_Idx,num2str(C2_TopRank_Result(r).Output_Idx(s)),'.pdb'];
-        copyfile (File,'C4.DIPER_P41212');
+        copyfile (File,'C4.DIPER_P43212');
     end
 end          
                        
@@ -29,7 +29,7 @@ fclose(Script_Prep);
 
 %%%% Script fot PIPER: Sample_PIPER.txt
 % Directory Path of "piper_package"
-Path='/home/sunmd33452/Desktop/piper_package/C4.DIPER_P41212/';
+Path='/home/sunmd33452/Desktop/piper_package/C4.DIPER_P43212/';
 
 % Write Sample_PIPER.txt
 Script_PIPER = fopen([pwd,'/Sample_PIPER.txt'],'w');
