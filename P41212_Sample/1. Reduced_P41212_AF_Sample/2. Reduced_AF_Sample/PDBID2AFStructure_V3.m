@@ -1,6 +1,7 @@
 %%%% PDBID2AF_Structure
 % Build up List of PDB Sample ID
-Filename='Input_Sample.txt';
+% Filename='P41212_Reduced_Sample.txt';
+Filename='Example.txt';
 File=fopen(Filename);
 Sample_Info(1).ID=[];i=1;
 while (1)
@@ -82,6 +83,7 @@ end
 
 % Use Alphafold 2 to Generate Structure (No Pre-folded Structures)
 % 5R61: Sample_Info(2).Res_Sta = 1; Sample_Info(2).Res_End = 220;
+% 7QRW: Sample_Info(22).Res_Sta = 466; Sample_Info(22).Res_End = 744;
 % 2GS3: Sample_Info(132).Res_Sta = 1; Sample_Info(132).Res_End = 185;
 
 %
@@ -152,5 +154,3 @@ for q=1:size(Sample_Info,2)
     
     Reamined_No=size(Sample_Info,2)-q
 end
-
-% Sample_Info(22).Res_Sta = 466; Sample_Info(22).Res_End = 744;
