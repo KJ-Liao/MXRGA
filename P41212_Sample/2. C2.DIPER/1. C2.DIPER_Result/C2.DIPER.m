@@ -426,8 +426,8 @@ parfor r=1:size(Sample,2)
 end
 
 % Output
+% writetable(struct2table(Sample),['Data_',num2str(Depth),'_',num2str(Limit),'.xlsx']);
 save(['Sample_',num2str(Depth),'_',num2str(Limit),'.mat'], 'Sample');
-writetable(struct2table(Sample),['Data_',num2str(Depth),'_',num2str(Limit),'.xlsx']);
 
 % Shut Down Idle Cores
 delete(gcp('nocreate'));
