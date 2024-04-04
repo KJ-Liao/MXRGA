@@ -1,6 +1,7 @@
 %%%% PDBID2AF_Structure
 % Build up List of PDB Sample ID
-Filename='Input_Sample.txt';
+% Filename='P43212_Reduced_Sample.txt';
+Filename='Example.txt';
 File=fopen(Filename);
 Sample_Info(1).ID=[];i=1;
 while (1)
@@ -136,7 +137,7 @@ for q=1:size(Sample_Info,2)
     
     %%%% Generate Truncated (pLDDT>70) Alphafold2_V3 PDB (_trun_AF,pdb)
     % Loading Simplified Template PDB
-    PDBStr=pdbread('Simplified temp.pdb');
+    PDBStr=pdbread('temp.pdb');
 
     % Replace Default Template with Model Coordinates
     PDBStr.Model.Atom=AF_PDB.Model.Atom(Seq_Index);
