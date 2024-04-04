@@ -141,7 +141,7 @@ for q=1:size(Sample_Info,2)
     
     %%%% Generate Truncated (pLDDT>70) Alphafold2_V3 PDB (_trun_AF,pdb)
     % Loading Simplified Template PDB
-    PDBStr=pdbread('Simplified temp.pdb');
+    PDBStr=pdbread('temp.pdb');
 
     % Replace Default Template with Model Coordinates
     PDBStr.Model.Atom=AF_PDB.Model.Atom(Seq_Index);
