@@ -4,7 +4,8 @@
 % 1B42
 % 1C46
 % ...
-Filename='Input_Sample.txt';
+% Filename='P43212_Reduced_Sample.txt';
+Filename='Example.txt';
 
 %%%% Build up List of PDB Sample ID
 File=fopen(Filename);
