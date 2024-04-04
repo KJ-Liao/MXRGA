@@ -1,6 +1,8 @@
 %%%% Create the Directory Pathes
 % Load Input_Sample.txt
-File=fopen('Input_Sample.txt');
+% Filename='P41212_Reduced_Sample.txt';
+Filename='Example.txt';
+File=fopen(Filename);
 
 % Create the Deposited File
 s=1;
