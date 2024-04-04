@@ -23,4 +23,4 @@ end
 
 Reduced_Sample=Ordered_Data(Reduced_sample_idx);
 
-writetable(struct2table(Reduced_Sample),'Reduced_Sample.xlsx');
+writetable(struct2table(Reduced_Sample),'P43212_Reduced_Sample.xlsx');
