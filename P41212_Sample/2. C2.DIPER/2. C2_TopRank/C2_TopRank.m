@@ -39,7 +39,7 @@ save('C2_TopRank_Result.mat', 'C2_TopRank_Result');
 Rots_list=table2array(readtable('C2_rots.txt'));
 
 % Default Parameters
-prm=2; set=['ft.00', num2str(prm), '.00']; Limit=1800;
+prm=0; set=['ft.00', num2str(prm), '.00']; Limit=1800;
 
 % Combination List for Translation Table
 itr=0; l=20; List=zeros((l*2+1)^3,3);
