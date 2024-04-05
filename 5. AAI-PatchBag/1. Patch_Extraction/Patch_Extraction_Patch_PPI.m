@@ -26,7 +26,7 @@ for i=1:size(Sample_Info,1) % Example: i=1
 
         if size(Int_Asy_Unit,1)<6
             Patch = cell2struct(cell(length(fields), []), fields);
-            writetable(struct2table(Patch),['Reduced_Sample_Int_Res_Results/Patch_Results_6plus1',PDB_ID, '_Patch.txt']);
+            writetable(struct2table(Patch),['Reduced_Sample_Int_Res_Results/Patch_Results_6plus1/',PDB_ID, '_Patch.txt']);
         else
             % Read Molecule Surface
             Ply_file = fopen(['Surf/',PDB_ID,'/',PDB_ID, '.ply']);
