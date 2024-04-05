@@ -1,0 +1,38 @@
+%%%% MXRGA Sample Log
+All Huam PDB Sample ID: 43665 (due to 2022-05-27)
+Inaccessible Samples:	292
+Accessible Samples:	43373
+
+%%%% SingleChain_PDB_Sample_2022-05-27
+Single Chain per Asymmetric Unit:	16298	(SingleChain_PDB_Sample_2022-05-27)
+Inaccessible Samples:			108
+Accessible Samples:			16190
+Accessible Single Chain Human Samples: 	16123 	(Eliminate Human-Associated Proteins)
+
+%%%% PDB Condition Extraction
+Accessible Single Chain Human Samples: 	16123
+PDB Condition Successful Extraction:	9120
+
+%%%% Association of Condition and Crystal Packing
+PDB Condition Successful Extraction:	9120
+PDB Condition Successful Extraction:	9090	(Eliminate "too short" Proteins)
+Reduced Samples with PDB Condition:	2472	(2472/3738) => PatchBag for Patch Distance Calculation (2393)
+
+%%%% Space Group
+1. SingleChain_Seq_Extractor.m 		(SCH_Seq.xlsx)
+2. SingleChain_SampleInfo.m 		(SCH_SampleInfo.xlsx: Sequence, Resolution, Space Group, Cell Parameter)
+3. Manual Examination 			(Accessible_SCH_SampleInfo.xlsx)
+4. Space Group_statistics.m 		(Space Group_statistics.xlsx)
+5. Reduced Sample.m			(Reduced_Sample_Merged.xlsx:     3781)
+6. Qualified_Reduced_Sample.m		(Eliminate "too short" Proteins: 3738) => PatchLibrary for Clust_medoid_300
+
+%%%% P41212 & P43212
+0. Reduced Samples:	   3781(16123)
+1. P41212 Reduced Samples: 191 (607)
+2. P43212 Reduced Samples: 184 (751)
+
+%%%% C2 Samples
+0. Total: 2518 (2518/3781)
+1. P41212 Reduced Samples: 191 
+2. P43212 Reduced Samples: 184
+3. Training/Testing Set: 1610/403
