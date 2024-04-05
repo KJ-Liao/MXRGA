@@ -1,6 +1,6 @@
 %%%% Patch to Vector
 % Load Qualified Reduced Sample ID
-Filename='Reduced_Sample_Merged.xlsx';
+Filename='Reduced_Sample_Training_Test_Dataset.xlsx';
 Sample_Info=table2struct(readtable(Filename));
 
 % Load Merged Error ID
@@ -9,7 +9,7 @@ Sample_Info=Sample_Info(setdiff([1:2472], Merged_Error_ID));
 
 % Load Clust Info (Representative Patch Library)
 Max_Cluster_No=300;
-load(['Clust_medoids_', num2str(Max_Cluster_No), '.mat'])
+load(['Clust_medoids_', num2str(Max_Cluster_No), '_PSI.mat'])
 
 % Patch Classification
 Selected_Sample=Sample_Info;
