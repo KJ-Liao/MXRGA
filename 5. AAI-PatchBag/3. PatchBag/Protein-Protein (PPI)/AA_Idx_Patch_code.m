@@ -1,5 +1,5 @@
 load('AA_Index.mat')
-load('Selected_Sample_Final.mat')
+load('Selected_Sample.mat')
 
 % Selected_Sample.Bar_code -> Spatial Distance
 Count=[];
