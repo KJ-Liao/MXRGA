@@ -339,7 +339,7 @@ parfor r=1:size(Result,2)
     Total_Pose_No=size(Result(r).Linear_Table,1);
     if Total_Pose_No>300, Total_Pose_No=300; end
 
-    Res_Cutoff=12;
+    Res_Cutoff=100; % Unrestricted
     Qualified_Idx=find(Result(r).Linear_Table(1:Total_Pose_No,end)<Res_Cutoff);
 
     if ~isempty(Qualified_Idx)
@@ -650,7 +650,7 @@ load('C2_TopRank_Result.mat')
 
 % Analysis
 t=0;
-Res_Cutoff=12;
+Res_Cutoff=100; % Unrestricted
 Sum_Table(1).ID=[];
 Sum_Table(1).C4_RMSD95=[];
 Sum_Table(1).Overall_RMSD95=[];
