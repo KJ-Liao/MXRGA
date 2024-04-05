@@ -654,7 +654,7 @@ load('C2_TopRank_Result.mat')
 
 % Analysis
 t=0;
-Res_Cutoff=12;
+Res_Cutoff=20; % Unlimited
 Sum_Table(1).ID=[];
 Sum_Table(1).C4_RMSD95=[];
 Sum_Table(1).Overall_RMSD95=[];
