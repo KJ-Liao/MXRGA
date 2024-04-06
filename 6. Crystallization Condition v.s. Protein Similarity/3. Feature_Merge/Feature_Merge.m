@@ -1,9 +1,11 @@
 % Features of Reduced Samples
 % Molecular Weight (MW) / Number of Used Patches / Interaction Matrix
+% Pairwise Distances Calculated from Sample_Info_2393.mat (in Package) 
 load('MPI.mat')
 
 % Crystallization Condition DISM and Conventional DISM of Reduced Samples
-load('Seq_DISM_2393.mat')       % Pairwise Sequence Dissimilarity
+% Pairwise Distances Calculated from Sample_Info_2393.mat (in Package) 
+load('Seq_DISM_2393.mat')       % Pairwise Sequence Dissimilarity 
 load('RMSD_DISM_2393.mat')      % Pairwise RMSD
 load('Jerhoud_DISM_2393.mat')   % Pairwise Jerhoud 3DZD
 load('Kihara_DISM_2393.mat')    % Pairwise Kihara 3DZD
