@@ -3,10 +3,10 @@
 load('MPI.mat')
 
 % Crystallization Condition DISM and Conventional DISM of Reduced Samples
-load('Seq_DISM_2393.mat')
-load('RMSD_DISM_2393.mat')
-load('Jerhoud_DISM_2393.mat')
-load('Kihara_DISM_2393.mat')
+load('Seq_DISM_2393.mat')       % Pairwise Sequence Dissimilarity
+load('RMSD_DISM_2393.mat')      % Pairwise RMSD
+load('Jerhoud_DISM_2393.mat')   % Pairwise Jerhoud 3DZD
+load('Kihara_DISM_2393.mat')    % Pairwise Kihara 3DZD
 load('Crystallization_Condition_DISM/Condition_DISM_050310_Temp_pH.mat')
 
 Seq_Linear_DISM=squareform(Seq_DISM_2393);
