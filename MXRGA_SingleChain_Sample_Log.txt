@@ -27,12 +27,12 @@ Reduced Samples with PDB Condition:	2472	(2472/3738) => PatchBag for Patch Dista
 6. Qualified_Reduced_Sample.m		(Eliminate "too short" Proteins: 3738) => PatchLibrary for Clust_medoid_300
 
 %%%% P41212 & P43212
-0. Reduced Samples:	   3781(16123)
-1. P41212 Reduced Samples: 191 (607)
-2. P43212 Reduced Samples: 184 (751)
+0. Reduced Samples:	   3781
+1. P41212 Reduced Samples: 191-1 (Error when docking: 6IPN)
+2. P43212 Reduced Samples: 184-1 (Error when docking: 5A2F)
 
 %%%% C2 Samples
 0. Total: 2518 (2518/3781)
-1. P41212 Reduced Samples: 191 
+1. P41212 Reduced Samples: 191
 2. P43212 Reduced Samples: 184
 3. Training/Testing Set: 1610/403
