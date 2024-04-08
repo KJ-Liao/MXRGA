@@ -9,7 +9,7 @@ This project demonstrates how to utilize the PIPER docking program along with sy
   (1) P41212 and P43212 samples using MXRGA (from sample download to simulated crystal packing models)
      - Input:  PDB file or AF2 protein structure of a given sample <br>
      - Output: Simulated crystal packing models                    <br>
-
+  
   (2) Protein crystallization condition ranking through the similarity of protein packing interfaces evaluated by AAI-PatchBag
      - Input:  PDB_ID (Please rename it in Script.m) and corresponding PDB file <br>
      - Output: AAI-PatchBag based condition (PDB ID) ranking in mat file        <br>
@@ -24,7 +24,11 @@ This project demonstrates how to utilize the PIPER docking program along with sy
 
 ## Requirements:
 
-1. PIPER			: physical-based docking program, available in: https://cluspro.org/downloads.php
-2. EDTSurf			: rapid macromolecular surface calculation, available in: https://zhanggroup.org/EDTSurf/
-3. generate_3dzd.py           	: molecular shape in ply format and 3DZD computation, available in: https://github.com/kiharalab/3d-af_surfer
-4. MakeShape, Shape2Zernike	: 3DZD computation, available in: https://github.com/jerhoud/zernike3d/tree/main
+1. PIPER    : physical-based docking program,                                <br>
+   available in: https://cluspro.org/downloads.php
+2. EDTSurf  : rapid macromolecular surface calculation,                      <br>
+   available in: https://zhanggroup.org/EDTSurf/
+3. generate_3dzd.py  : molecular shape in ply format and 3DZD computation,   <br>
+   available in: https://github.com/kiharalab/3d-af_surfer
+4. MakeShape, Shape2Zernike	: 3DZD computation,                              <br>
+   available in: https://github.com/jerhoud/zernike3d/tree/main
