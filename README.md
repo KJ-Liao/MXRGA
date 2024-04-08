@@ -24,11 +24,11 @@ This project demonstrates how to utilize the PIPER docking program along with sy
 
 ## Requirements:
 
-1. PIPER    : physical-based docking program,                                <br>
+1. PIPER    : physical-based docking program.                                <br>
    available in: https://cluspro.org/downloads.php
-2. EDTSurf  : rapid macromolecular surface calculation,                      <br>
+2. EDTSurf  : rapid macromolecular surface calculation.                      <br>
    available in: https://zhanggroup.org/EDTSurf/
-3. generate_3dzd.py  : molecular shape in ply format and 3DZD computation,   <br>
+3. generate_3dzd.py  : molecular shape in ply format and 3DZD computation.   <br>
    available in: https://github.com/kiharalab/3d-af_surfer
-4. MakeShape, Shape2Zernike	: 3DZD computation,                              <br>
+4. MakeShape, Shape2Zernike	: 3DZD computation.                              <br>
    available in: https://github.com/jerhoud/zernike3d/tree/main
