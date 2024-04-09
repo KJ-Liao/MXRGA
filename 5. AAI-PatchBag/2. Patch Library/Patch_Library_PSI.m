@@ -88,64 +88,8 @@ N = size(DISM,1);
 Max_Cluster_No=300;
 [idx, C] = kmedoids((1:N)', Max_Cluster_No, 'Distance', @(row, col) DISM(row, col), 'Replicates', 5);
 
-% SH=zeros(Max_Cluster_No,2);
-% for K=2:Max_Cluster_No
-% idx = kmedoids((1:N)', K, 'Distance', @(row, col) DISM(row, col));
-% s=silhouette((1:N)',idx, @(row, col) DISM(row, col));
-% SH(K,1)=mean(s);
-% SH(K,2)=Dunns(K,DISM,idx);
-% K
-% end
-% [val, psn]=max(SH(:,2));
-% [idx, C] = kmedoids((1:N)', psn, 'Distance', @(row, col) DISM(row, col));
-
 % Medoid
 load('Patch_Library_8000.mat')
 Clust_medoids=Patch_Library_8000(C);
-
-%
-
-% Intra-distance
-Clust_Table=zeros(Max_Cluster_No,3);
-for t=1:Max_Cluster_No
-    Tidx=find(idx==t);
-    if size(Tidx,1)==1
-        Clust_Table(t,1)=0;
-        Clust_Table(t,2)=Tidx;
-    else
-        Cluster=Patch_Library_DISM(Tidx, Tidx);
-        Clust_Table(t,1)=mean(squareform(Cluster));
-        [~,c]=min(sum(Cluster,1));
-        Clust_Table(t,2)=Tidx(c);
-    end
-end
-
-% Inter_distance
-P = perms(1:6);
-Medoids_DISM=[];
-parfor n=1:(Max_Cluster_No-1)
-    P1=Clust_medoids(n).Coord;
-
-    RMSD_Table=zeros(size(P,1), 1);
-    Angle_Table=zeros(size(P,1), 1);
-    for m=n+1:Max_Cluster_No
-        for r=1:size(P,1)
-            P2=Clust_medoids(m).Coord([P(r,:)],:);
-
-            [R,~,eRMSD] = CoordiExam_AC(P1, P2);
-            RMSD_Table(r,1)=eRMSD;
-            Angle_Table(r,1)=acosd(dot(Clust_medoids(n).Norm_V*R, Clust_medoids(m).Norm_V));
-        end
-        
-        % Default: 90
-        Medoids_DISM=[Medoids_DISM, min(RMSD_Table(Angle_Table<120),[],'all')];
-    end
-    n
-end
-Medoids_DISM=squareform(Medoids_DISM);
-
-% Clust_Table
-Clust_Table(:,3)=sum(Medoids_DISM,1)/(Max_Cluster_No-1);
-boxplot([Clust_Table(:,1), Clust_Table(:,3)], 'Labels', {'Intra-dist', 'Inter-dist'})
 
 save('Clust_medoids_300.mat', 'Clust_medoids');
