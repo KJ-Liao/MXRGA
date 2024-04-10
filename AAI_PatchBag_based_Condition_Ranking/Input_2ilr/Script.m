@@ -85,7 +85,7 @@ try
 
     %
 
-    if PDB.Sequence.NumOfResidues<20
+    if PDB.Sequence(1).NumOfResidues<20
         disp('Please check the protein sequence.');
     elseif size(Asy_Unit,1)<15
         disp('Please check the protein sequence.');
@@ -881,7 +881,7 @@ load('Database/Sample_Info_2472.mat')
 %%% Sequence DISM Calculation
 % Input Sequence
 PDB=pdbread([PDB_ID, '/', PDB_ID,'.pdb']);
-Input_Seq=strrep(strrep(PDB.Sequence.Sequence,'U','C'),'X','G');
+Input_Seq=strrep(strrep(PDB.Sequence(1).Sequence,'U','C'),'X','G');
 
 % Seq DISM Calculation
 Seq_Linear_DISM=zeros(1,size(Sample_Info_2472,2));
