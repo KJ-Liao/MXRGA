@@ -2,7 +2,7 @@
 
 This project demonstrates how to utilize the PIPER docking program along with symmetry handling implemented in MATLAB to predict the protein crystal packing of a given protein. It also exhibits how to assess potential conditions for protein crystallization by analyzing the similarity of protein packing interfaces calculated using AAI-PatchBag.
 
-
+![image](https://github.com/KJ-Liao/MXRGA/blob/main/Overview.jpg)
 
 ## Contents:
 
